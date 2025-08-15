@@ -426,13 +426,14 @@ h1 {
     }
 }
 
+/* Estilos base para desktop */
 .audio-control {
     position: fixed;
-    bottom: 60px; 
-    right: 60px; 
-    width: 80px; 
-    height: 80px;
-    background: rgba(106, 48, 147, 0.7);
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: rgba(106, 48, 147, 0.8);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -440,24 +441,58 @@ h1 {
     cursor: pointer;
     z-index: 100;
     transition: all 0.3s ease;
-    border: 3px solid var(--pink);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--pink);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .audio-control .icon {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     fill: var(--light);
     margin: 0;
-    transition: transform 0.3s ease;
 }
 
+/* Efectos hover */
 .audio-control:hover {
+    transform: scale(1.1);
     background: rgba(106, 48, 147, 0.9);
-    transform: scale(1.15);
 }
 
-.audio-control:hover .icon {
-    transform: scale(1.1);
+.audio-control.muted .icon {
+    opacity: 0.7;
+}
+
+/* Estilos específicos para móviles */
+@media (max-width: 768px) {
+    .audio-control {
+        width: 70px;
+        height: 70px;
+        bottom: 25px;
+        right: 25px;
+        background: rgba(106, 48, 147, 0.9);
+    }
+    
+    .audio-control .icon {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .audio-control:active {
+        transform: scale(0.95);
+    }
+}
+
+@media (max-width: 480px) {
+    .audio-control {
+        width: 65px;
+        height: 65px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .audio-control .icon {
+        width: 32px;
+        height: 32px;
+    }
 }
 
