@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti, Mi Amor | BCode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="Westlife_You_Make_Me_Feel.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <div class="audio-control" id="audioControl">
+        <svg class="icon" viewBox="0 0 24 24">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+        </svg>
+    </div>
+    <div class="decoration-container" id="decoration-container"></div>
+
+    <div class="scroll-down" id="scrollDown">
+        <svg class="icon" viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6"/>
+        </svg>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Para Ti, Mi Amor</h1>
+            <div class="subtitle">Eres la luz que ilumina mi camino</div>
+            
+            <button class="btn-surprise" id="btnSurprise">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                Lee Mi Carta
+            </button>
+        </header>
+        
+        <section class="love-letter">
+            <h2 class="letter-title">Mi Promesa de Amor</h2>
+            
+            <div class="letter-content">
+                <p>Desde el momento en que entraste en mi vida, supe que eras especial. Cada día a tu lado confirma lo que mi corazón intuía desde el principio: que eres la mujer con la que quiero compartir mi vida.</p>
+                
+                <p>Tus risas son mi melodía favorita, tus ojos mi paisaje preferido, y tu amor el regalo más valioso que he recibido. No hay instante en que no desee estar a tu lado, compartiendo sueños, construyendo recuerdos y amándote con todo mi ser.</p>
+                
+                <p>Quiero que seas mi compañera en esta aventura llamada vida. Prometo amarte en los días soleados y en las noches tormentosas, celebrar tus triunfos como míos y estar a tu lado cuando necesites apoyo.</p>
+                
+                <p>Eres mi presente y mi futuro, la razón por la que creo en el destino. Contigo quiero construir un hogar lleno de amor, risas y momentos inolvidables.</p>
+            </div>
+            
+            <div class="time-display">
+                <div class="current-time">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M3 5h18v14H3zM16 3v2M8 3v2M3 9h18M12 15h2v2h-2z"/>
+                    </svg>
+                    <span id="current-date">20 de junio de 2024</span>
+                    &nbsp;&nbsp;&nbsp;
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                    <span id="current-time">00:00:00</span>
+                </div>
+            </div>
+        </section>
+        
+        <div class="signature">Con todo mi corazón, para siempre tuyo</div>
+    </div>
+
+    <div class="modal" id="surpriseModal">
+        <div class="modal-hearts" id="modalHearts"></div>
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2 class="modal-title">Mi Más Sincero Sentimiento</h2>
+            <p class="modal-message">
+                Quiero que sepas que cada día me enamoro más de ti. De tu forma de ser, de tu manera de ver la vida, de esa magia que solo tú posees. 
+                No hay duda en mi corazón: eres la mujer que quiero a mi lado hoy, mañana y siempre.
+            </p>
+            <p class="modal-message">
+                Prometo ser tu refugio cuando necesites consuelo, tu cómplice en cada locura y tu mayor admirador en cada paso que des. 
+                Contigo quiero compartir risas, sueños, silencios y todo lo que la vida nos depare.
+            </p>
+            <div class="signature">Por siempre, tu amor</div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
